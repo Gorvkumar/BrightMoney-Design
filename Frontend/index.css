@@ -1,0 +1,846 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    background: linear-gradient(to bottom, #E3F1E7, #FEEFC7);
+    width: 100%;
+    height: 100vh;
+   
+}
+
+
+
+.hero-section {
+    background: linear-gradient(to bottom, #E3F1E7, #FEEFC7);
+    height: 780px;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */ /* Adjusts the height to fill the viewport */
+    text-align: center; /* Centers the text inside the div */
+}
+
+.hero-div {
+  padding: 20px;
+}
+
+.text {
+    text-align: center; /* Center-align the content */
+    margin: 0 auto; /* Center the div itself horizontally */
+    width: fit-content; /* Adjust width based on content */
+    line-height: 1.2;
+    padding: 20px; /* Adjust line spacing for readability */
+}
+
+.heading {
+    display: block;
+    margin: 12px;
+    font-size: 92px; /* Adjust font size for the heading */
+    font-weight: bold; /* Make the heading bold */
+    margin: 0; /* Remove extra margin */
+}
+
+.subheading {
+    font-size: 92px; /* Adjust font size for the subheading */
+    margin: 0; /* Remove extra margin */
+ /* Optional: change text color if needed */
+}
+
+
+.fa-brands{
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    font-size: medium;
+    border-radius: 12%;
+    color: white;
+}
+
+.fa-brands:hover{
+    background-color: #fff;
+    transition: 0.3s;
+    color: black;
+}
+
+
+.checkboxes {
+    display: flex;               /* Use flexbox layout */
+    flex-direction: row;        /* Arrange items in a row */
+    justify-content: center;     /* Center items horizontally */
+    align-items: center;         /* Center items vertically */
+    gap: 20px;   
+    margin: 50px;/* Add space between checkboxes */
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+.custom-checkbox input {
+    display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6BCF97; /* Green border for custom checkbox */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 8px; /* Space between checkbox and text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-checkbox .checkmark::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #000; /* Checkmark color */
+    display: none; /* Initially hidden */
+    clip-path: polygon(14% 44%, 0% 63%, 52% 100%, 100% 17%, 83% 0%, 40% 75%);
+    /* Creates a checkmark shape */
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    display: block; /* Display checkmark when input is checked */
+}
+
+
+
+/* Styles for section-104 */
+.section-104 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 5%;
+    width: 960px;
+    clip-path: inset(0 0 300px 0);
+    position: relative;
+}
+
+
+
+.background {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    margin: 0 auto; /* Center the entire background container */
+}
+
+.orbit {
+    position: absolute;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.orbit1 {
+    width: 700px;
+    height: 700px;
+    border: 2px solid #c8e6c9;
+}
+
+.orbit2 {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, #17C95F, #90E0AF);
+    opacity: 0.5;
+}
+
+.orbit3 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #17C95F, #90E0AF);
+    opacity: -0.5;
+}
+
+.small-sphere {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #17C95F;
+    border-radius: 50%;
+}
+
+.sphere1 {
+    top: 0%; /* Top of the orbit */
+    left: 63%; /* Adjusted for alignment */
+    transform: translate(-50%, 0);
+}
+
+.sphere2 {
+    top: 50%; /* Middle of the orbit */
+    left: -2%; /* Left of the orbit */
+    transform: translate(0, -50%);
+}
+
+.sphere3 {
+    top: 50%; /* Middle of the orbit */
+    left: 102%; /* Right of the orbit */
+    transform: translate(-100%, -50%);
+}
+
+.center-content {
+    position: absolute; /* Keeps it inside the relative .background */
+    top: 35%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensures it's above the orbits */
+}
+
+.mobile-hand {
+    max-width: 130%;
+    height: auto;
+    display: block; /* Ensure it's treated as a block for centering */
+}
+
+
+.container {
+    top: 110px;
+    margin-top: 40px;
+    position: relative;
+    padding: 20px; /* Adjusted for consistency */
+    margin: 0 auto; /* Center within the parent div */
+    max-width: 960px; /* Matches the width of .section-104 */
+    background: transparent; /* Ensures no additional background */
+    text-align: center; /* Centers the text and elements inside */
+    z-index: 10; /* Ensures proper stacking */
+}
+
+
+.subheading {
+    
+    font-size: 35px;
+    margin: 0 auto; /* Center within the container */
+    display: inline-block; /* Ensure proper centering if it's not full-width */
+}
+
+.subheading p {
+    padding: 20px;
+    font-size: 45px;
+    margin: 0; /* Remove default margins for better alignment */
+}
+
+.subheading span {
+    font-weight: bold;
+}
+
+.horizontal-bar {
+    width: 100%; /* Reduce width for better aesthetics, adjust as needed */
+    height: 1px; /* Height of the bar */
+    background-color: grey; /* Green color */
+    margin: 45px auto; /* Center the bar horizontally */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
+
+.cards-div {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align all divs to the start */
+    gap: 60px; /* Smaller spacing between .bank-div containers */
+  }
+  
+  .bank-div {
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add spacing between the image and the text */
+  }
+  
+  .bank-div img {
+    width: 90px; /* Set a fixed size for the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .bank-div p {
+    margin: 0; /* Remove default margin for better alignment */
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.4; /* Set line height for readability */
+    max-width: 200px; /* Constrain the text width to wrap properly */
+  }
+  
+
+  .logos {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Align the logos vertically */
+    gap: 20px; /* Space between each logo div */
+    margin-top: 100px; /* Add some spacing from the container above */
+  }
+  
+  .logos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px; /* Equal width for all logo divs */
+    height: 120px; /* Equal height for all logo divs */ /* Optional background color for visual alignment */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+  
+  .logos img {
+    max-width: 80%; /* Ensure logos fit inside the div */
+    max-height: 80%; /* Maintain the aspect ratio */
+    object-fit: contain; /* Make sure images fit properly inside their container */
+  }
+  
+
+
+
+  /*offcards */
+
+  /* Container for offcards section */
+.offcards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6FEF7;
+  }
+  
+  .cards-section {
+    width: 100%;
+  }
+  
+  .section-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-weight: bold;
+  }
+  
+  .section-description {
+    color: #555;
+  }
+  
+  .cards-container {
+    margin: 50px;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .card-content {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px;
+  }
+  
+  .logos img {
+    height: 40px;
+  }
+  
+
+
+  .card-img-container {
+  background: white;
+  border-radius: 15px;
+  width: 405px;
+  height: 400px;
+  box-shadow: white;
+  border: 2px solid white; /* Add white border */
+  box-sizing: border-box; /* Include padding and border in element's width/height */
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text-container {
+  width: 400px;
+}
+
+.card-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 22px;
+  color: #666;
+  line-height: 2;
+}
+
+.cta-button {
+  margin-top: 10px;
+  color: #000;
+  font-size: 27px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-no {
+  font-size: 20px;
+  font-weight: 600;
+  color: #17C95F;
+}
+
+
+
+
+/* Rating Section */
+
+.container {
+
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+    max-width: 1200px; /* Center the container */
+}
+
+.section1 {
+    text-align: center; /* Center text within section1 */
+    margin-bottom: 20px;
+}
+
+.section2 {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping to handle smaller screen sizes */
+}
+
+.rating-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(20% - 10px); /* Adjust width for 5 items */
+    margin: 5px; /* Add equal margin around each rating-item */
+    background-color: #f5f5f5; /* Ensure the background is white */
+    box-sizing: border-box; /* Include padding and border in element's width/height */
+}
+
+.testimonial-rating .star {
+    color: #17C95F; /* Set star color to #17C95F */
+    font-size: 18px; /* Adjust size of the stars */
+}
+
+.rating-item p {
+    font-size: 14px; /* Set font size for the testimonial text */
+    color: #666; /* Set text color to a lighter grey for readability */
+    line-height: 1.5; /* Improve line spacing for readability */
+}
+
+.section1 h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section1 p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+
+/* FAQ Section  */
+
+.faq-container {
+   margin: 10%;
+  }
+  
+ .faq-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+ } 
+  
+
+ /* footer */
+footer{
+
+}
+ .footer-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #BAE8CB, #E5F1E3);
+    max-width: 1200px;
+ }
+
+ .footer-left {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centering the content vertically */
+  }
+ .footer-right {
+    width: 50%;
+  display: flex;
+  justify-content: center; /* Centering the image horizontally */
+  align-items: center;
+  }
+  
+
+ .footer-image{
+    width: 230px;
+ }
+
+ .footer-title{
+    margin: 70px;
+    /* text-align: center; */
+    display: inline-block;
+    width: 385px;
+    font-size: 44px;
+ }
+
+ .footer-title span{
+    font-weight: 600;
+ }
+
+/*  */
+
+.background2 {
+    position: relative;
+  width: 600px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  }
+  
+  .orbit {
+    position: absolute;
+    border: 2px solid #a8edaa; /* Creates the outlined orbit */
+    border-radius: 50%;
+  }
+  
+  .orbit1 {
+    width: 550px; /* First orbit size */
+    height: 550px;
+  }
+  
+  .orbit2 {
+    width: 300px; /* Second orbit size */
+    height: 300px;
+    background: radial-gradient(circle, #17C95F, #90E0AF);
+  }
+
+  .orbit3 {
+    width: 406px;
+    height: 400px;
+    background: radial-gradient(circle, #17C95F, #90E0AF);
+    opacity: 0.5;
+}
+  
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-top: 58px;
+    margin-left: 55px;
+  }
+  
+  .footer-image {
+    width: 230px;
+    height: auto;
+  }
+
+
+  /* footer para */
+
+  .footer-para {
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 130px;
+ /* Align all text to the center */
+  }
+  
+  .footer-paragraph {
+    font-size: 14px;
+    color: #444444;
+    margin: 0 auto; /* Center the block */
+  }
+  
+  .footer-paragraph strong {
+    font-weight: bold;
+    display: block; /* Display as a block for proper spacing */
+    margin-bottom: 10px;
+  }
+  
+  .footer-paragraph span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .footer-paragraph li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    line-height: 1.6; /* Maintain line spacing */
+    color: #444444; /* Match text color */
+  }
+  
+
+
+/* Mobile CSS */
+
+
+@media (min-width: 220px) and (max-width: 768px) {
+   
+  .main{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  .app-info{
+    display: none;
+  }
+
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between checkbox items */
+    align-items: flex-start;
+  }
+  
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .custom-checkbox input {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6BCF97; /* Green border for custom checkbox */
+    border-radius: 4px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-checkbox .checkmark::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #000; /* Checkmark color */
+    display: none;
+    clip-path: polygon(14% 44%, 0% 63%, 52% 100%, 100% 17%, 83% 0%, 40% 75%);
+  }
+  
+  .custom-checkbox input:checked + .checkmark::after {
+    display: block;
+  }
+
+  .checkboxes {
+    width: 100%; /* Take full width on mobile */
+    padding: 10px; /* Add some padding for spacing */
+  }
+
+  .custom-checkbox {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 5px 0; /* Reduce padding for compact layout */
+  }
+
+  .custom-checkbox .checkmark {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  .custom-checkbox .checkmark::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 104 */
+  .section-104{
+    width: 100%;
+    position: relative;
+  }
+
+.center-content{
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -12px;
+    z-index: 2;
+    top: 107px;
+}
+
+.container{
+  width: 100%;
+  position: relative;
+}
+
+.cards-div{
+  display: inline-block;
+}
+
+/* Cards section */
+
+.section-header{
+  display: inline-block;
+}
+
+.cards{
+  display: inline;
+}
+
+.card-content{
+  display: inline;
+}
+
+.card-img-container{
+  width:auto;
+  height: auto;
+}
+
+.card-text-container{
+  width: auto;
+}
+
+  .background{
+    width: 300px;
+  }
+  .hero-section {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .small-sphere {
+    width: 10px;
+    height: 10px;
+  }
+  /* Rating section */
+
+  .rating-item{
+    width: auto;
+  }
+
+
+/* faq container */
+.faq-container{
+  display: inline;
+    position: relative;
+    top: 10%;
+}
+
+.faq-title{
+  font-size: 25px;
+}
+
+#accordian-flush{
+  padding: 25px;
+}
+
+  /* footer */
+  .footer-container{
+    display: inline;
+  }
+  .footer-left{
+    width: auto;
+  }
+  .footer-title{
+    width: auto;
+    font-size: 20px;
+  }
+.footer-right{
+  width: auto;
+}
+.background2{
+  width: auto;
+  height: auto;
+}
+
+.orbit1{
+  width: 415px;
+  height: 415px;
+}
+
+.footer-para{
+  position: relative;
+  display: inline;
+  background: none;
+  top: 50px;
+  text-align: center;
+}
+
+.footer-paragraph{
+  font-size: 14px;
+}
+
+.footer-para p{
+  margin: 5px;
+  font-size: 11px;
+}
+
+.footer-para ol{
+  margin: 12px;
+  font-size: 12px;
+}
+
+
+.footer-para span{
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays on top of other elements */
+  background-color: white; /* Optional: Set a background color for visibility */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+}
+
+
